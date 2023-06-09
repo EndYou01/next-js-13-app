@@ -22,7 +22,7 @@ export default function Navigation() {
                 <ul className={styles.navigation}>
                     {links.map(({ label, route }) => (
                         <li key={route}>
-                            <Link href={route}>
+                            <Link href={route} rel="preload">
                                 {label}
                             </Link>
                         </li>

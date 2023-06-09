@@ -1,8 +1,10 @@
+
+
 import Link from "next/link";
 
 const fetchSinglePost = (id) => {
     //Incremental static regeneration
-    return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+    return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
         next: {
             revalidate: 60
         }

@@ -18,7 +18,7 @@ export default async function Post({children, params }) {
 
     return (
         <article>
-            <h1>{post.title}</h1>
+            <h3>{post.title}</h3>
             <p>{post.body}</p>
             <Link href={`/posts/${id}/comments`}>Ver Comentarios</Link>
             {children}

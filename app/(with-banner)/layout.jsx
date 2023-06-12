@@ -4,7 +4,7 @@ export default function PostsLayout({ children }) {
     return (
         <div>
             {/* <Counter /> */}
-            <small style={{color: 'purple', background: 'white'}}>El mejor canal de Twitch de programacion: @midudev</small>
+            <marquee style={{color: 'purple', background: 'white'}}>El mejor canal de Twitch de programacion: @midudev</marquee>
             {children}
         </div>
     );

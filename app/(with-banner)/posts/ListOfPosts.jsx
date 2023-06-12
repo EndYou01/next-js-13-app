@@ -24,11 +24,11 @@ export async function ListOfPosts() {
 
     return posts.slice(0, 5).map(post => (
         <article key={post.id}>
-            <Link href='/posts/[id]' as={`/posts/${post.id}`} rel="preload">
+            <Link href={`/posts/${post.id}`} rel="preload">
                 <h2>{post.title}</h2>
                 <p>{post.body}</p>
-                <LikeButton id={post.id} />
             </Link>
+            <LikeButton id={post.id} />
 
         </article>
     ))
